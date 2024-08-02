@@ -1,1 +1,44 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oleo+Script:wght@400;700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="form1.css" />
+  </head>
+  <body>
+    <form action="">
+      <label for="username">Your name</label>
+      <input type="text" name="user-name" id="username" />
+      <label for="useremail">Your email address</label>
+      <input type="email" name="user-email" id="useremail" />
+      <label for="userage">Your age</label>
+      <input type="number" name="user-age" id="userage" step="1" />
+      <label for="userpassword">Your password</label>
+      <input type="password" name="user-password" id="userpassword" />
+      <label for="userbirthday">Your birthday</label>
+      <input type="date" name="user-birthday" id="userbirthday" />
+      <hr />
+      <h2>How should we verify your account?</h2>
+      <div class="form-controls">
+        <input type="radio" name="verify" id="verify-text-message" value="" />
+        <label for="verify-text-message">Via text message (SMS)</label>
+      </div>
+      <div class="form-controls">
+        <input type="radio" name="verify" id="verify-phone" value="" />
+        <label for="verify-phone">Via a phone call</label>
+      </div>
+      <div class="form-controls">
+        <input type="radio" name="verify" id="verify-email" value="" />
+        <label for="verify-email">Via an email</label>
+      </div>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
