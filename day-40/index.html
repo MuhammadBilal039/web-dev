@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>Play Tic, Tac, Toe</h1>
+      <p>Built with HTML, CSS, JavaScript and - of course - lots of love!</p>
+    </header>
+    <main>
+      <section id="game-configration">
+        <aside>
+          <h2>Choose your name</h2>
+          <form>
+            <div>
+              <label for="playername">Player name</label>
+              <input type="text" name="playername" id="playername" />
+            </div>
+            <div>
+              <button type="button" class="btn btn-alt">Cancel</button>
+              <button type="submit" class="btn">Confirm</button>
+            </div>
+          </form>
+        </aside>
+        <ol>
+          <li>
+            <article>
+              <h2>Player 1</h2>
+              <h3>PLAYER NAME</h3>
+              <p>X</p>
+              <button class="btn btn-alt">Edit</button>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h2>Player 2</h2>
+              <h3>PLAYER NAME</h3>
+              <p>O</p>
+              <button class="btn btn-alt">Edit</button>
+            </article>
+          </li>
+        </ol>
+        <button class="btn">Start New Game</button>
+      </section>
+      <section id="active-game">
+        <h2>You won, PLAYER NAME!</h2>
+        <p>Click "Start New Game" above, to start a new game!</p>
+        <p>It's your turn PLAYER NAME!</p>
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
 
+          <li></li>
+          <li></li>
+          <li></li>
+
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
